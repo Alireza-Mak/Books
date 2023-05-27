@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import BookList from './components/BookList';
 import { Book, Books } from './types';
 import CreateBook from './components/CreateBook';
-const url = 'https://my-json-server.typicode.com/Alireza-Mak/database/db';
+const url = 'https://my-json-server.typicode.com/Alireza-Mak/database/books';
 
 const App = () => {
   const [books, setBooks] = useState<Books>([]);
