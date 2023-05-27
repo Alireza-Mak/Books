@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import BookList from './components/BookList';
 import { Book, Books } from './types';
 import CreateBook from './components/CreateBook';
-const url = 'https://alireza-mak.github.io/JSON_database/books.json';
+const url = 'http://localhost:3001/books';
 
 const App = () => {
   const [books, setBooks] = useState<Books>([]);
