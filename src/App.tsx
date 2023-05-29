@@ -7,7 +7,6 @@ const url = 'http://localhost:3001/books';
 
 const App = () => {
   const [books, setBooks] = useState<Books>([]);
-  const [showDisable, setShowDisable] = useState<boolean>(false);
   const fetchBooks = async () => {
     const response = await axios.get<Books>(url);
     setBooks(response.data);
@@ -39,15 +38,13 @@ const App = () => {
   };
 
   useEffect((): void => {
-    setShowDisable(true);
     fetchBooks();
-    setShowDisable(false);
   }, []);
   return (
     <div className="app">
       <h1>Reading List</h1>
       <BookList books={books} onDelete={deleteBook} onEdit={editBook} />
-      <CreateBook onSubmit={createBook} disable={showDisable} />
+      <CreateBook onSubmit={createBook} />
     </div>
   );
 };

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 interface CreateBookProps {
   onSubmit: (title: string) => void;
-  disable: boolean;
 }
-const CreateBook: React.FC<CreateBookProps> = ({ onSubmit, disable }) => {
+const CreateBook: React.FC<CreateBookProps> = ({ onSubmit }) => {
   const [title, setTitle] = useState<string>('');
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -27,9 +26,7 @@ const CreateBook: React.FC<CreateBookProps> = ({ onSubmit, disable }) => {
           type="text"
           value={title}
         />
-        <button disabled={disable} className="button">
-          Add book
-        </button>
+        <button className="button">Add book</button>
       </form>
     </div>
   );
