@@ -28,12 +28,6 @@ Additionally, a db.json file serves as the server-side storage for book data. Th
 Overall, this app allows users to create, edit, and delete books. The data is stored both in the user interface and on the server side. It is built with React and TypeScript, designed to be responsive, and uses a JSON server as the backend storage.
 
 
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
 
 ## Tech Stack
 
@@ -53,10 +47,6 @@ React, Typescript, Javascript, HTML, CSS...
 For support, email Info@alirezamak.com.
 
 
-## Demo
-
-Insert gif or link to demo
-
 
 ## Authors
 
@@ -73,17 +63,17 @@ Insert gif or link to demo
 
 ## Installation
 
-Install my-project with npm
+Install my-project:
 
 ```bash
   git clone https://github.com/Alireza-Mak/Books.git
 ```
 ```bash
-  npm install my-project
+  cd books
+
 ```
 ```bash
-  cd my-project
-
+  npm install
 ```
 ```bash
   npm run server
